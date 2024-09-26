@@ -4,8 +4,8 @@
 
 import socket
 
-server_address  = ("192.168.1.129", 6980)   #localhost = ip del server
-print("cioa")
+server_address  = ("10.210.0.29", 6980)   #localhost = ip del server
+
 BUFFER_SIZE = 4092 #ricevo dei dati o li invio, devo dichiare quanti bit posso usare
 
 udp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #DGRAM socket udp
