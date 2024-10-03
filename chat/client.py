@@ -16,3 +16,8 @@ data, address = udp_client_socket.recvfrom(BUFFER_SIZE)
 print(f"Risposta server: {data.decode()}")
 
 udp_client_socket.close()
+
+
+def main():
+    udp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #DGRAM socket udp
+    udp_client_socket.sendto()

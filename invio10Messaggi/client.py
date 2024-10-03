@@ -10,7 +10,7 @@ udp_client_socket.bind(server_address)
 
 message = "ciao server"
 
-for i in range(0, 9):
+for i in range(10):
     udp_client_socket.sendto(message.encode(), server_address)
 
 udp_client_socket.close()
